@@ -1,8 +1,13 @@
 name: 'Newman summary'
 
+inputs:
+  postmanApiKey:
+    description: 'Set api key'
+    required: true
+
 outputs:
   summary: # id of output
-    description: 'The time we greeted you'
+    description: 'Your summary'
 
 runs:
   using: 'node12'

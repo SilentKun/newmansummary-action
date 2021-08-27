@@ -2,9 +2,10 @@ const core = require('@actions/core');
 const newman = require('newman');
 
 try {
+    const apiKey = core.getInput('postmanApiKey');
     newman.run({
-        collection: 'https://api.getpostman.com/collections/15577376-13df1f74-81bd-4c80-a23a-aba31f0016a7?apikey=PMAK-6127edbcffa99200347d31a0-e6ff17b0e53da0faf885390df4edc9da78',
-        environment: 'https://api.getpostman.com/environments/15577376-572498e7-3163-4eed-9b8d-191fbbad90f0?apikey=PMAK-6127edbcffa99200347d31a0-e6ff17b0e53da0faf885390df4edc9da78',
+        collection: `https://api.getpostman.com/collections/15577376-13df1f74-81bd-4c80-a23a-aba31f0016a7?apikey=${apiKey}`,
+        environment: `https://api.getpostman.com/environments/15577376-572498e7-3163-4eed-9b8d-191fbbad90f0?apikey=${apiKey}`,
         reporters:  ['htmlextra'],
         reporter: {
           htmlextra: {
