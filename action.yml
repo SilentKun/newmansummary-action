@@ -1,6 +1,7 @@
 name: 'Newman summary'
 outputs:
-  summary: summary
+  summary: # id of the output
+    description: 'The sum of the inputs'
 runs:
   using: 'node12'
   main: 'index.js'
