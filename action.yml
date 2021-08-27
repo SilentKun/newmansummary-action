@@ -1,6 +1,6 @@
 name: 'Newman summary'
 outputs:
-  sum:
+  summary:
 
 runs:
   using: 'node12'
