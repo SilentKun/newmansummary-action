@@ -9,6 +9,7 @@ try {
         reporter: {
           htmlextra: {
               export: 'testResults/htmlreport.html',
+              timezone: "Russia/Moscow"
           }
         }
       })
