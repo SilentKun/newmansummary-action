@@ -19,6 +19,7 @@
   "homepage": "https://github.com/SilentKun/newmansummary-action#readme",
   "dependencies": {
     "@actions/core": "^1.5.0",
-    "newman": "^5.2.4"
+    "newman": "^5.2.4",
+    "newman-reporter-htmlextra": "^1.22.0"
   }
 }
