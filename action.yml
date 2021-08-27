@@ -1,7 +1,7 @@
 name: 'Newman summary'
 outputs:
-  summary:
-    description: 'The sum of the inputs'
+  sum:
+
 runs:
   using: 'node12'
   main: 'index.js'
