@@ -1,6 +1,6 @@
 name: 'Newman summary'
 outputs:
-  summary: # id of the output
+  summary:
     description: 'The sum of the inputs'
 runs:
   using: 'node12'
