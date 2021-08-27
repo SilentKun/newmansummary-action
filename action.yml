@@ -1,0 +1,6 @@
+name: 'Newman summary'
+outputs:
+  summary: # id of output
+runs:
+  using: 'node12'
+  main: 'index.js'

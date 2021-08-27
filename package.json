@@ -1,0 +1,24 @@
+{
+  "name": "newmansummary-action",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SilentKun/newmansummary-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SilentKun/newmansummary-action/issues"
+  },
+  "homepage": "https://github.com/SilentKun/newmansummary-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.5.0",
+    "newman": "^5.2.4"
+  }
+}
