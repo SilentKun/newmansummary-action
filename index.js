@@ -17,7 +17,7 @@ try {
       .on('start', (err, args) => {
         console.log('running a collection...');
       }).on('done', (err, summary) => {
-        ("summary", JSON.stringify(summary.run.stats));
+        core.setOutput("summary", `Total: ${summary.run.stats.assertions.total} Failed: ${summary.run.stats.assertions.failed}`);
       });
 } catch (error) {
   core.setFailed(error.message);
