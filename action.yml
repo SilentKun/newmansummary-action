@@ -4,6 +4,12 @@ inputs:
   postmanApiKey:
     description: 'Set api key'
     required: true
+  environment:
+    description: 'Set environment'
+    required: true
+  collection:
+    description: 'Set collection'
+    required: true
 
 outputs:
   summary: # id of output
