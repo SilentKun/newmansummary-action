@@ -1,11 +1,15 @@
 const core = require('@actions/core');
 const newman = require('newman');
 
+const apiBase = 'https://api.getpostman.com';
+
 try {
     const apiKey = core.getInput('postmanApiKey');
+    const collection = core.getInput('collection');
+    const environment = core.getInput('environment');
     newman.run({
-        collection: `https://api.getpostman.com/collections/15577376-13df1f74-81bd-4c80-a23a-aba31f0016a7?apikey=${apiKey}`,
-        environment: `https://api.getpostman.com/environments/15577376-572498e7-3163-4eed-9b8d-191fbbad90f0?apikey=${apiKey}`,
+        collection: `${apiBase}/collections/${collection}?apikey=${apiKey}`,
+        environment: `${apiBase}/environments/${environment}?apikey=${apiKey}`,
         reporters:  ['htmlextra'],
         reporter: {
           htmlextra: {
